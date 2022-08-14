@@ -1,6 +1,5 @@
 package com.BikkadIt.repository;
 
-import java.io.Serializable;
 
 
 import org.springframework.data.repository.CrudRepository;
@@ -10,7 +9,7 @@ import com.BikkadIt.model.Passanger;
 
 
 @Repository
-public  interface PassangerRepository extends CrudRepository<Passanger, Serializable> {
+public  interface PassangerRepository extends CrudRepository<Passanger, Integer> {
 
 	
 }

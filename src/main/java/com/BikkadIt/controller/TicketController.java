@@ -21,7 +21,7 @@ public class TicketController {
 
 
 
-@PostMapping(value="/bookTicket",consumes ="application/json",produces="application/json")
+@PostMapping(value="/getTicket",consumes ="application/json",produces="application/json")
 public ResponseEntity<Ticket>bookTicket(@RequestBody Passanger passenger){
 	Ticket ticketStatus= serviceImpl.ticketStatus(passenger);
 	

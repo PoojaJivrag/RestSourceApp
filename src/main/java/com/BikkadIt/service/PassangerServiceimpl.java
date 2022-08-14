@@ -22,7 +22,7 @@ public class PassangerServiceimpl  {
 		
          passangerRepository.save(passenger);
 			Ticket t= new Ticket();
-			t.setPrn("111");
+			t.setPrn((int)(Math.random()*100));
 			t.setTicketStatus("Confirm");
 			t.setTicketPrice("500");
 			

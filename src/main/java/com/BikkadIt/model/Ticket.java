@@ -3,18 +3,18 @@ package com.BikkadIt.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+
 public class Ticket {
 
-	@Id
-	private String prn;
+
+	private double prn;
 	private String ticketPrice;
 	private String ticketStatus;
-	public String getPrn() {
+	public double getPrn() {
 		return prn;
 	}
-	public void setPrn(String prn) {
-		this.prn = prn;
+	public void setPrn(double d) {
+		this.prn = d;
 	}
 	public String getTicketPrice() {
 		return ticketPrice;
