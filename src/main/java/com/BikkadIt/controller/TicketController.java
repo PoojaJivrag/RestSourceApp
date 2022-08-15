@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.BikkadIt.model.Passanger;
 import com.BikkadIt.model.Ticket;
 import com.BikkadIt.service.PassangerServiceimpl;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
 
 @RestController
@@ -21,7 +22,7 @@ public class TicketController {
 
 
 
-@PostMapping(value="/getTicket",consumes ="application/json",produces="application/json")
+@PostMapping(value="/bookTicket",consumes ="application/json",produces="application/json")
 public ResponseEntity<Ticket>bookTicket(@RequestBody Passanger passenger){
 	Ticket ticketStatus= serviceImpl.ticketStatus(passenger);
 	

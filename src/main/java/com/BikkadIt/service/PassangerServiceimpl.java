@@ -18,9 +18,7 @@ public class PassangerServiceimpl  {
 		if(passenger== null) {
 			return null;
 		}else {
-			
-		
-         passangerRepository.save(passenger);
+			passangerRepository.save(passenger);
 			Ticket t= new Ticket();
 			t.setPrn((int)(Math.random()*100));
 			t.setTicketStatus("Confirm");
